@@ -3,29 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "react-intersection-observer": "^9.10.2",
-=======
-<<<<<<< HEAD
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-=======
->>>>>>> 3a846d21 (Initialize project using Create React App)
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-<<<<<<< HEAD
-    "react-icons": "^5.0.1",
-=======
->>>>>>> 3a846d21 (Initialize project using Create React App)
->>>>>>> c69bbbdba8e32bf521161251c037475a64df5a24
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -52,14 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
   },
   "devDependencies": {
     "tailwindcss": "^3.4.1"
-=======
->>>>>>> 3a846d21 (Initialize project using Create React App)
->>>>>>> c69bbbdba8e32bf521161251c037475a64df5a24
   }
 }
