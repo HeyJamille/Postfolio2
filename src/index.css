@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+}
+
+:root {
+  background-color: #171717; 
+  scroll-behavior: smooth;
+}
+
+/* Fontes */
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 17px;
+}
+
+/* Cores */
+h1, h2, h3, li {
+  color: #FFFF;
+}
+
+p {
+  color: #828282;
+}
