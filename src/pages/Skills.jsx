@@ -16,13 +16,13 @@ const Skills = () => {
     <article
       id="skills"
       ref={ref}
-      className="mb-20 xl:mx-auto max-w-6xl px-6"
+      className="mx-auto px-6 py-20"
     >
       <h1 className="text-[#cd51ff] text-center text-4xl font-semibold mb-10 drop-shadow-lg">
         Habilidades
       </h1>
 
-      <section className="flex justify-center flex-wrap gap-8">
+      <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-12">
         <SkillIcon icon={<IoLogoHtml5 />} text="HTML5" color="#E34F26" />
         <SkillIcon icon={<IoLogoCss3 />} text="CSS3" color="#1572B6" />
         <SkillIcon icon={<IoLogoJavascript />} text="JavaScript" color="#F7DF1E" />
