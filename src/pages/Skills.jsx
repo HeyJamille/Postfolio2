@@ -19,7 +19,7 @@ const Skills = () => {
       className="mx-auto px-6 py-20"
     >
       <h1 className="text-[#cd51ff] text-center text-4xl font-semibold mb-10 drop-shadow-lg">
-        Habilidades
+        Minhas Habilidades
       </h1>
 
       <section className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-12">

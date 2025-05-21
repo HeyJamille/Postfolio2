@@ -17,12 +17,12 @@ export const Informations = () => {
           ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
         `}
       >
-        <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight tracking-tight text-center lg:text-left">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-[#cd51ff] leading-tight tracking-tight text-center lg:text-left">
           Olá, eu sou <span className="text-[#cd51ff]">Jamille Araujo</span>
         </h1>
 
         <p className="text-lg text-justify text-gray-300 max-w-xl leading-relaxed md:text-xl md:text-center lg:text-left">
-          Desenvolvedora Front-end apaixonada por criar experiências digitais modernas, com foco em <span className="text-white font-semibold">performance, acessibilidade e design intuitivo</span>. 
+          Desenvolvedora Front-end apaixonada por criar experiências digitais modernas, com foco em <span className="text-[#cd51ff] font-semibold">performance, acessibilidade e design intuitivo</span>. 
         </p>
 
         <div className="flex flex-col sm:flex-row justify-start items-start gap-4 mt-4 w-full max-w-md">

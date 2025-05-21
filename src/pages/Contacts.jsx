@@ -7,8 +7,6 @@ import { BsTelephonePlusFill } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi"; // <-- Novo ícone de email
 
 const Contacts = () => {
-  const { ref, inView } = useInView({ triggerOnce: true });
-
   const contacts = [
     {
       link: 'https://github.com/HeyJamille',
@@ -43,29 +41,25 @@ const Contacts = () => {
   ];
 
   return (
-    <article
-      ref={ref}
-      className={`px-6 py-24 transition-all duration-700 ease-in-out ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-      aria-labelledby="contacts-title"
-    >
+    <article className='flex flex-col max-w-7xl mx-auto px-6 pt-24 lg:flex-row items-center justify-center gap-16'>
       <h2
         id="contacts-title"
-        className="text-4xl font-bold text-[#cd51ff] mb-16 tracking-wide text-center drop-shadow"
+        className="text-4xl text-justify font-bold text-gray-300 px-6 py-24 lg:w-[50%] lg:text-center tracking-wide drop-shadow"
       >
-        Contatos
+        Entre em contato e vamos desenvolver juntos a <span className="font-semibold text-[#cd51ff]">solução perfeita</span> para o seu negócio!" 
       </h2>
 
-      <section className="mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10">
+      <section className="w-full mx-auto text-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 lg:w-[50%]">
         {contacts.map(({ link, icon, app, account }, index) => (
           <a
             key={index}
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center bg-[#1e1e1e] border border-[#2a2a2a] rounded-2xl p-6 shadow-lg hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105 group"
+            className="flex flex-col items-center w-full bg-[#1e1e1e] border border-[#2a2a2a] rounded-2xl p-3 shadow-lg hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105 group"
             aria-label={`Link para ${app}`}
           >
-            <div className="text-[#cd51ff] mb-4 group-hover:scale-110 transition-transform">
+            <div className="text-[#cd51ff] text-center mb-4 group-hover:scale-110 transition-transform">
               {icon}
             </div>
             <h3 className="text-lg font-semibold text-white mb-1">{app}</h3>
