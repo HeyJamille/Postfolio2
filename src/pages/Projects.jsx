@@ -38,7 +38,7 @@ const Projects = ({data}) => {
     );
 
   return (
-    <article className="w-full max-w-7xl mx-auto px-6 py-20">
+    <article className="w-full max-w-7xl mx-auto py-20">
       <h1
         id="projects"
         className="text-4xl md:text-5xl font-extrabold text-[#cd51ff] text-center mb-16 tracking-wide"

@@ -4,10 +4,10 @@ import image from '../assets/girl.png';
 
 export const About = () => {
   return (
-    <article className='max-w-7xl mx-auto px-6 py-24 flex flex-col-reverse lg:flex-row items-center justify-between gap-16'>
+    <article className='flex flex-col-reverse mx-auto py-20 lg:flex-row items-center justify-between gap-10'>
 
-      <section>
-        <img src={image} className='rounded-3xl md:w-[500px] lg:w-full shadow-xl border-[2px] border-[#cd51ff]/40 hover:scale-105 transition-transform duration-500'/>
+      <section className='max-w-[500px]'>
+        <img src={image} className='rounded-3xl h-full shadow-xl border-[2px] border-[#cd51ff]/40 hover:scale-105 transition-transform duration-500 lg:w-full'/>
       </section>
 
       <section> 

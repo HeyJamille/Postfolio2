@@ -7,9 +7,9 @@ export const Informations = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
-    <section
+    <article
       ref={ref}
-      className="max-w-7xl mx-auto px-6 py-24 flex flex-col-reverse lg:flex-row items-center justify-between gap-16 md:gap-20"
+      className="flex flex-col-reverse mx-auto py-20 lg:flex-row items-center justify-between gap-16 md:gap-20"
     >
       {/* Text and buttons */}
       <div
@@ -17,7 +17,7 @@ export const Informations = () => {
           ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
         `}
       >
-        <h1 className="text-4xl md:text-5xl font-extrabold text-[#cd51ff] leading-tight tracking-tight text-center lg:text-left">
+        <h1 className="text-4xl font-extrabold text-[#cd51ff] leading-tight tracking-tight text-center lg:text-left">
           Olá, eu sou <span className="text-[#cd51ff]">Jamille Araujo</span>
         </h1>
 
@@ -53,7 +53,7 @@ export const Informations = () => {
           className="relative rounded-3xl w-full shadow-xl border-[2px] border-[#cd51ff]/40 hover:scale-105 transition-transform duration-500"
         />
       </div>
-    </section>
+    </article>
   );
 };
 
