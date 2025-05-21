@@ -15,7 +15,7 @@ const Menu = () => {
   return (
     <nav className='fixed w-full z-50 py-5 px-8 flex flex-row justify-between transition-all duration-300'>
       {/* Título */}
-      <a href="#" className="text-white text-3xl font-bold tracking-wide">
+      <a href="#" className="text-white text-2xl lg:text-3xl font-bold tracking-wide">
         Dev_<span className="text-[#cd51ff]">Jamille</span>
       </a>
 

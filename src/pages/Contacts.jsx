@@ -44,7 +44,7 @@ const Contacts = () => {
     <article className='flex flex-col max-w-7xl mx-auto py-20 lg:flex-row items-center justify-center gap-16'>
       <h2
         id="contacts-title"
-        className="text-3xl lg:text-4xl px-5 text-justify font-bold text-gray-300 lg:w-[50%] lg:text-center tracking-wide drop-shadow"
+        className="sm:text-2xl md:text-3xl lg:text-4xl text-justify font-bold text-gray-300 lg:w-[50%] lg:text-center tracking-wide drop-shadow"
       >
         Entre em contato e vamos desenvolver juntos a <span className="font-semibold text-[#cd51ff]">solução perfeita</span> para o seu negócio!" 
       </h2>

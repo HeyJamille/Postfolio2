@@ -18,7 +18,7 @@ const Skills = () => {
       ref={ref}
       className="lg:px-24 py-20"
     >
-      <h1 className="text-[#cd51ff] text-center text-4xl font-semibold mb-10 drop-shadow-lg">
+      <h1 className="text-[#cd51ff] text-center text-3xl lg:text-4xl font-semibold mb-10 drop-shadow-lg">
         Habilidades
       </h1>
 

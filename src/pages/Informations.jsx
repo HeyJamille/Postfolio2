@@ -9,7 +9,7 @@ export const Informations = () => {
   return (
     <article
       ref={ref}
-      className="flex flex-col-reverse mx-auto py-20 lg:flex-row items-center justify-between gap-16 md:gap-20"
+      className="flex flex-col-reverse h-full lg:h-screen mx-auto py-20 lg:flex-row items-center justify-between gap-16 md:gap-20"
     >
       {/* Text and buttons */}
       <div
@@ -17,7 +17,7 @@ export const Informations = () => {
           ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
         `}
       >
-        <h1 className="text-4xl font-extrabold text-[#cd51ff] leading-tight tracking-tight text-center lg:text-left">
+        <h1 className="text-3xl lg:text-4xl font-extrabold text-[#cd51ff] leading-tight tracking-tight text-center lg:text-left">
           Olá, eu sou <span className="text-[#cd51ff]">Jamille Araujo</span>
         </h1>
 

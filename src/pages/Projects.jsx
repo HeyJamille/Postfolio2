@@ -41,7 +41,7 @@ const Projects = ({data}) => {
     <article className="w-full max-w-7xl mx-auto py-20">
       <h1
         id="projects"
-        className="text-4xl md:text-5xl font-extrabold text-[#cd51ff] text-center mb-16 tracking-wide"
+        className="text-3xl lg:text-4xl font-extrabold text-[#cd51ff] text-center mb-16 tracking-wide"
       >
         Projetos
       </h1>

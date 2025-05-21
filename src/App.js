@@ -11,9 +11,9 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <main className='bg-[#171717] overflow-auto w-full h-screen'>
+    <main className='bg-[#171717] overflow-auto w-full'>
       <Menu/>
-      <div className="flex w-full flex-col gap-20 px-5 md:px-20 xl:px-30">
+      <div className="flex w-full flex-col gap-20 p-5  md:px-20 xl:px-30">
         <Informations /> 
         <About/>
         <Projetos />

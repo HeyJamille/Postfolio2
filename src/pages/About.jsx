@@ -13,7 +13,7 @@ export const About = () => {
       <section> 
         <h2
         id="about"
-        className="text-center text-4xl md:text-5xl font-extrabold text-[#cd51ff] mb-12 tracking-wider"
+        className="text-center text-3xl lg:text-4xl font-extrabold text-[#cd51ff] mb-12 tracking-wider"
       >
         Sobre mim
         </h2>
