@@ -11,7 +11,7 @@ export const Informations = () => {
       ref={ref}
       className="max-w-7xl mx-auto px-6 py-24 flex flex-col-reverse lg:flex-row items-center justify-between gap-16 md:gap-20"
     >
-      {/* Texto e botões */}
+      {/* Text and buttons */}
       <div
         className={`flex flex-col justify-center items-center lg:items-start gap-6 transition-all duration-1000 ease-in-out transform 
           ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}

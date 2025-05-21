@@ -2,17 +2,15 @@ import React, { useEffect, useState } from 'react';
 import projeto1 from '../assets/imagesProject/alimentacao.jpeg';
 import projeto2 from '../assets/imagesProject/alimentacao.jpeg';
 
-// Importe outros conforme necessário
-
 const imageMap = {
   'nome-do-repo-1': projeto1,
   'nome-do-repo-2': projeto2,
   // ...
 };
 
-const Projects = () => {
+const Projects = ({data}) => {
   const [repos, setRepos] = useState([]);
-  const [visibleCount, setVisibleCount] = useState(4);
+  const [visibleCount, setVisibleCount] = useState(3);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -29,7 +27,7 @@ const Projects = () => {
   }, []);
 
   const handleShowMore = () => {
-    setVisibleCount((prev) => prev + 4);
+    setVisibleCount((prev) => prev + 3);
   };
 
   if (loading)
@@ -40,7 +38,7 @@ const Projects = () => {
     );
 
   return (
-    <article className="max-w-7xl mx-auto px-6 py-20">
+    <article className="w-full max-w-7xl mx-auto px-6 py-20">
       <h1
         id="projects"
         className="text-4xl md:text-5xl font-extrabold text-[#cd51ff] text-center mb-16 tracking-wide"
@@ -48,7 +46,7 @@ const Projects = () => {
         Projetos
       </h1>
 
-      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {repos.slice(0, visibleCount).map((repo) => {
           const image = imageMap[repo.name]
 

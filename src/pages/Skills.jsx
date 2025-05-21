@@ -22,7 +22,7 @@ const Skills = () => {
         Habilidades
       </h1>
 
-      <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-12">
+      <section className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-12">
         <SkillIcon icon={<IoLogoHtml5 />} text="HTML5" color="#E34F26" />
         <SkillIcon icon={<IoLogoCss3 />} text="CSS3" color="#1572B6" />
         <SkillIcon icon={<IoLogoJavascript />} text="JavaScript" color="#F7DF1E" />

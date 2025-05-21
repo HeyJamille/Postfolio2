@@ -8,11 +8,10 @@
   box-sizing: border-box;
   font-family: "Inconsolata", monospace;
 }
-
+/* 
 :root {
-  background-color: #171717; 
-  scroll-behavior: smooth;
-}
+  overflow: hidden;
+}*/
 
 /* Fontes */
 h1 {

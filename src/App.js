@@ -11,18 +11,18 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
+    <main className='bg-[#171717] overflow-auto w-full h-screen'>
       <Menu/>
-      <main className="flex flex-col gap-20 mx-5 md:mx-20 xl:mx-30">
-        <Informations/>
+      <div className="flex w-full flex-col gap-20 px-5 md:px-20 xl:px-30">
+        <Informations /> 
         <About/>
-        <Contatos />
         <Projetos />
+        <Contatos />
         <Habilidades />
-      </main>
-      <Footer />
-    </>
+      </div>
+       <Footer /> 
+    </main>
   );
-}
+};
 
 export default App;
