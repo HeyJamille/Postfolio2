@@ -21,8 +21,8 @@ export const Informations = () => {
           Olá, eu sou <span className="text-[#cd51ff]">Jamille Araujo</span>
         </h1>
 
-        <p className="text-lg text-justify md:text-xl text-gray-300 max-w-xl leading-relaxed md:text-center lg:text-left">
-          Desenvolvedora Front-end apaixonada por criar experiências digitais modernas, com foco em <span className="text-white font-semibold">performance</span>, <span className="text-white font-semibold">acessibilidade</span> e <span className="text-white font-semibold">design intuitivo</span>.
+        <p className="text-lg text-justify text-gray-300 max-w-xl leading-relaxed md:text-xl md:text-center lg:text-left">
+          Desenvolvedora Front-end apaixonada por criar experiências digitais modernas, com foco em <span className="text-white font-semibold">performance, acessibilidade e design intuitivo</span>. 
         </p>
 
         <div className="flex flex-col sm:flex-row justify-start items-start gap-4 mt-4 w-full max-w-md">

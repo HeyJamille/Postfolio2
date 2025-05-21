@@ -45,7 +45,7 @@ const SkillIcon = ({ icon, text, color }) => {
     >
       <div
         style={{ color }}
-        className="bg-[#1e1e1e] rounded-xl p-4 shadow-lg text-6xl transition-transform duration-300 transform hover:scale-110"
+        className="bg-[#1e1e1e] rounded-xl p-3 shadow-lg text-6xl transition-transform duration-300 transform hover:scale-110"
       >
         {icon}
       </div>

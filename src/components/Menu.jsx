@@ -15,13 +15,13 @@ const Menu = () => {
   return (
     <nav className='fixed w-full z-50 py-5 px-8 flex flex-row justify-between transition-all duration-300'>
       {/* Título */}
-      <a href="#" className="text-white text-3xl font-bold tracking-wide">
+      <a href="#" className="text-white text-2xl font-bold tracking-wide">
         dev<span className="text-[#cd51ff]">_jamille</span>
       </a>
 
       {/* Mobile Button */}
       <button className="text-white text-3xl z-40 md:hidden" onClick={toggleMenu}>
-        {isMenuOpen ? <MdClose className="w-8 h-8" /> : <IoIosMenu className="w-8 h-8" />}
+        {isMenuOpen ? <MdClose className="w-10 h-10" /> : <IoIosMenu className="w-10 h-10" />}
       </button>
       
 
