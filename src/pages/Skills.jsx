@@ -1,22 +1,18 @@
 import React from 'react';
-import { useInView } from 'react-intersection-observer';
 
 // Icons
 import { IoLogoHtml5 } from "react-icons/io";
 import { IoLogoCss3 } from "react-icons/io5";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
-import { SiCsharp } from "react-icons/si";
+import { SiTailwindcss, SiStyledcomponents, SiFigma } from "react-icons/si";
+import { FaAngular } from "react-icons/fa6";
 
 const Skills = () => {
-  const { ref, inView } = useInView();
-
   return (
     <article
       id="skills"
-      ref={ref}
-      className="lg:px-24 py-20"
+      className="lg:px-24 pb-20"
     >
       <h1 className="text-[#cd51ff] text-center text-3xl lg:text-4xl font-semibold mb-10 drop-shadow-lg">
         Habilidades
@@ -28,7 +24,9 @@ const Skills = () => {
         <SkillIcon icon={<IoLogoJavascript />} text="JavaScript" color="#F7DF1E" />
         <SkillIcon icon={<FaReact />} text="React" color="#61DAFB" />
         <SkillIcon icon={<SiTailwindcss />} text="Tailwind CSS" color="#38B2AC" />
-        <SkillIcon icon={<SiCsharp />} text="Angular" color="#9B4F96" />
+        <SkillIcon icon={<FaAngular />} text="Angular" color="#DD0031" />
+        <SkillIcon icon={<SiFigma />} text="Figma" color="#F24E1E" />
+        <SkillIcon icon={<SiStyledcomponents />} text="Styled Components" color="#DB7093" />
       </section>
     </article>
   );
@@ -45,7 +43,7 @@ const SkillIcon = ({ icon, text, color }) => {
     >
       <div
         style={{ color }}
-        className="bg-[#1e1e1e] rounded-xl p-3 shadow-lg text-6xl transition-transform duration-300 transform hover:scale-110"
+        className="bg-[#1e1e1e] rounded-xl p-2 lg:p-3 shadow-lg text-6xl transition-transform duration-300 transform hover:scale-110"
       >
         {icon}
       </div>

@@ -1,10 +1,8 @@
-import React from 'react';
-import { useInView } from 'react-intersection-observer';
-import image from '../assets/girl.png';
+import image from '../assets/informations/girl.png';
 
 export const About = () => {
   return (
-    <article className='flex flex-col-reverse mx-auto py-20 lg:flex-row items-center justify-between gap-10'>
+    <article className='flex flex-col-reverse mx-auto lg:flex-row items-center justify-between gap-10'>
 
       <section className='max-w-[500px]'>
         <img src={image} className='rounded-3xl h-full shadow-xl border-[2px] border-[#cd51ff]/40 hover:scale-105 transition-transform duration-500 lg:w-full'/>

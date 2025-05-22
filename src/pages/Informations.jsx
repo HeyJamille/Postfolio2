@@ -1,15 +1,17 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import foto from '../assets/foto_jamille.jpeg';
+import foto from '../assets/informations/foto_jamille.jpeg';
 import curriculo from '../assets/Currículo DEV - Jamille Araujo.pdf';
 
 export const Informations = () => {
+
   const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
     <article
+      id="informations"
       ref={ref}
-      className="flex flex-col-reverse h-full lg:h-screen mx-auto py-20 lg:flex-row items-center justify-between gap-16 md:gap-20"
+      className="flex flex-col-reverse pt-[90px] mx-auto lg:flex-row items-center justify-between gap-16 md:gap-20"
     >
       {/* Text and buttons */}
       <div
