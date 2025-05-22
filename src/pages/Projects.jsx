@@ -21,6 +21,7 @@ const Projects = ({ data }) => {
   const [repos, setRepos] = useState([]);
   const [visibleCount, setVisibleCount] = useState(3);
   const [loading, setLoading] = useState(true);
+  const totalProjects = repos.length;
 
   useEffect(() => {
     fetch('https://api.github.com/users/HeyJamille/repos?sort=updated')
@@ -36,8 +37,16 @@ const Projects = ({ data }) => {
       });
   }, []);
 
+
   const handleShowMore = () => {
-    setVisibleCount((prev) => prev + 3);
+    setVisibleCount((prev) => {
+      const newCount = prev + 3;
+      return newCount >= totalProjects ? totalProjects : newCount;
+    });
+  };
+
+  const handleShowLess = () => {
+    setVisibleCount(3);
   };
 
   if (loading)
@@ -100,13 +109,15 @@ const Projects = ({ data }) => {
             })}
           </section>
 
-          {visibleCount < repos.length && (
+          {totalProjects > 3 && (
             <div className="flex justify-center mt-12">
               <button
-                onClick={handleShowMore}
+                onClick={
+                  visibleCount >= totalProjects ? handleShowLess : handleShowMore
+                }
                 className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#cd51ff] to-[#7f5eff] text-white font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
               >
-                Mostrar mais
+                {visibleCount >= totalProjects ? 'Mostrar menos' : 'Mostrar mais'}
               </button>
             </div>
           )}

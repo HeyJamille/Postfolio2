@@ -65,9 +65,9 @@ const Menu = () => {
       <div className={`fixed inset-0 bg-[#171717] flex flex-col items-center justify-center gap-10
         transition-transform duration-500 md:hidden ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         
-        <MenuItem id="#about" text="Sobre Mim" onClick={toggleMenu} className="text-3xl" />
-        <MenuItem id="#projects" text="Projetos" onClick={toggleMenu} className="text-3xl" />
-        <MenuItem id="#skills" text="Habilidades" onClick={toggleMenu} className="text-3xl" />
+        <MenuItem id="#about" text="Sobre Mim" onClick={toggleMenu} className="text-2xl" />
+        <MenuItem id="#projects" text="Projetos" onClick={toggleMenu} className="text-2xl" />
+        <MenuItem id="#skills" text="Habilidades" onClick={toggleMenu} className="text-2xl" />
         
         <button
           onClick={handleContactClick}

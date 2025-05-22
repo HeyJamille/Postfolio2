@@ -2,10 +2,9 @@ import React from 'react';
 
 // Icons
 import { IoLogoHtml5 } from "react-icons/io";
-import { IoLogoCss3 } from "react-icons/io5";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiStyledcomponents, SiFigma } from "react-icons/si";
+import { IoLogoJavascript, IoLogoCss3} from "react-icons/io5";
+import { SiTailwindcss, SiFigma } from "react-icons/si";
+import { FaNodeJs, FaPython, FaReact } from "react-icons/fa";
 import { FaAngular } from "react-icons/fa6";
 
 const Skills = () => {
@@ -26,7 +25,8 @@ const Skills = () => {
         <SkillIcon icon={<SiTailwindcss />} text="Tailwind CSS" color="#38B2AC" />
         <SkillIcon icon={<FaAngular />} text="Angular" color="#DD0031" />
         <SkillIcon icon={<SiFigma />} text="Figma" color="#F24E1E" />
-        <SkillIcon icon={<SiStyledcomponents />} text="Styled Components" color="#DB7093" />
+        <SkillIcon icon={<FaNodeJs />} text="Node.js" color="#68A063" />      
+        <SkillIcon icon={<FaPython />} text="Python" color="#3776AB"/>
       </section>
     </article>
   );
